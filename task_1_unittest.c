@@ -33,3 +33,12 @@ void test_counter_large(void) {
     TEST_CHECK(counter(10000, 50000) == 81826);
     TEST_CHECK(counter(100, 100000) == 217146);
 }
+
+TEST_LIST = {
+        { "sum_simple",     test_sum_simple },
+        { "sum_large",      test_sum_large },
+        { "counter_simple", test_counter_simple },
+        { "counter_range",  test_counter_range },
+//        { "counter_large",  test_counter_large }, // Uncomment in if you’re brave!
+        { 0 }
+};
